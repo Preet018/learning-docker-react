@@ -8,3 +8,13 @@ before_install:
 
 script:
   - docker run -e CI=true preet1018/learning-docker-react npm run test
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "as-south-1"
+#   app: "frontend"
+#   env: "Frontend-env"
+#   bucket_name: "elasticbeanstalk-ap-south-1-147856894694"
+#   bucket_path: "frontend"
+#   on:
+#     branch: master
